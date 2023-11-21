@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.cards{
+    width: 600px;
+    height: 600px;
+    background: rgb(27, 27, 175);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+    
+}
+.card{
+    width: 400px;
+    height: 400px;
+    background: purple;
+    margin-top: 0px;
+    animation-name: cardRotate;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+.card:hover{
+    /* transform: scale(100);
+    transform: rotate(100deg);
+    transform: translate(5s);
+    translate: 300px;
+    transform: skew(20deg); */
+
+}
+
+@keyframes cardRotate{
+    to{
+        transform: rotate(0deg);
+    }from{
+        transform: rotate(70deg);
+    }
+}
+
+
+.cards{
+    animation: name corAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
